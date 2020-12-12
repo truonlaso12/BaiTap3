@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="#fff"
+    android:elevation="5dp"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="left"
+            android:id="@+id/imageAdd"
+            android:layout_width="88dp"
+            android:layout_height="60dp"
+
+            android:src="@drawable/avatar" />
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/txvTen"
+            android:layout_toRightOf="@id/imageAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phước Trường"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khách hàng mới"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/imageAdd"
+            android:layout_below="@id/txvTen"/>
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageNotify"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:src="@drawable/notify" />
+    </LinearLayout>
+
+</RelativeLayout>

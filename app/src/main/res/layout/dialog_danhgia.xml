@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:orientation="horizontal"
+            android:background="#F4BA65">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/android_logo" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:text=" Đánh Giá"
+            android:textColor="#000"
+            android:textSize="25dp" />
+        <View
+            android:layout_width="380dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#DFD4B3"/>
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/amarante"
+                android:text=" 1 Sao"
+                android:textSize="20dp" />
+
+
+            <RadioButton
+                android:fontFamily="@font/amarante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=" 2 Sao"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:fontFamily="@font/amarante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=" 3 Sao"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:fontFamily="@font/amarante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=" 4 Sao"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:fontFamily="@font/amarante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=" 5 Sao"
+                android:textSize="20dp"/>
+        </RadioGroup>
+        <View
+            android:layout_width="380dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#DFD4B3"/>
+        <TextView
+            android:id="@+id/textView4"
+            android:fontFamily="monospace"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="10dp"
+            android:text=" Phản Hồi "
+            android:textColor="#000"
+            android:textSize="25dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:hint="..."
+            android:padding="10dp"
+            android:textColorHint="#2B2121"
+            android:textSize="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Gửi"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border"/>
+
+    </LinearLayout>
+</LinearLayout>
